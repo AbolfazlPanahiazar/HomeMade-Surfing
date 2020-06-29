@@ -18,6 +18,9 @@ html {
   height: 85px;
   position: fixed;
   background-color: transparent;
+  @media (max-width: 460px) {
+    height: 50px;
+  }
   &__menu {
     height: 100%;
     list-style: none;
@@ -27,9 +30,20 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 860px) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    @media (max-width: 460px) {
+      font-size: 1rem;
+    }
   }
   &__item {
     margin: 0 3rem;
+    @media (max-width: 860px) {
+      margin: 0 1rem;
+    }
   }
   &__link:link,
   &__link:visited {
@@ -46,7 +60,96 @@ html {
   display: flex;
   align-items: center;
   padding: 2rem 0 0 12rem;
+  height: 85px;
   &__img {
     width: 5rem;
+    @media (max-width: 460px) {
+      display: none;
+    }
+  }
+  @media (max-width: 860px) {
+    padding: 2rem 0 0 2rem;
+  }
+  @media (max-width: 460px) {
+    height: 50px;
+  }
+}
+
+// *********** top banner **********
+.topbanner {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5rem;
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+  &__img {
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  &__vertical {
+    color: #cacacb;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 4rem;
+    right: 4%;
+    writing-mode: vertical-rl;
+  }
+  &__title {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    max-width: 500px;
+    @media (max-width: 650px) {
+        max-width: 200px;
+      }
+    &--top {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #6db1f1;
+      @media (max-width: 650px) {
+        font-size: 1rem;
+      }
+    }
+    &--middle {
+      font-size: 6rem;
+      font-weight: 600;
+      color: #000000;
+      @media (max-width: 650px) {
+        font-size: 3rem;
+      }
+    }
+    &--bottom {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #8f9dbe;
+      @media (max-width: 650px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  &__footer {
+    position: absolute;
+    color: #8f9dbe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    @media (max-width: 750px) {
+      display: none;
+    }
+    &--top {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    &--bottom {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
   }
 }
