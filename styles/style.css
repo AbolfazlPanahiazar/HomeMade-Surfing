@@ -384,21 +384,63 @@ html {
 .form__input {
   background-color: #d4d4d4;
   padding-left: 1rem;
-  width: 90%;
   max-width: 500px;
+  width: 90%;
   height: 40px;
   display: flex;
   justify-content: space-between;
 }
 .form__input--input {
   border: none;
+  width: 90%;
   background-color: transparent;
+}
+.form__input--input:focus {
+  outline: none;
 }
 .form__input--button {
   width: 10%;
   background-color: #2688e5;
   color: #ffffff;
   border: none;
+}
+
+.camp {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+  .camp {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.camp__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.camp__texts--title {
+  width: 300px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.camp__texts--link {
+  width: 350px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.camp__img {
+  width: 50%;
+}
+@media (max-width: 700px) {
+  .camp__img {
+    width: 90%;
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
