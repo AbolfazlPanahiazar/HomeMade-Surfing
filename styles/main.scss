@@ -413,15 +413,13 @@ html {
 // ********** bottom logo **********
 .bottomLogo {
   margin-top: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 85px;
   &__img {
     width: 5rem;
-    @media (max-width: 460px) {
-      display: none;
-    }
   }
   @media (max-width: 860px) {
     padding: 2rem 0 0 2rem;
@@ -433,6 +431,9 @@ html {
 
 // ********** footer **********
 .footer {
+  .navbar__menu {
+    justify-content: center;
+  }
   margin-top: 2rem;
 }
 

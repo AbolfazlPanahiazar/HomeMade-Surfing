@@ -445,6 +445,7 @@ html {
 
 .bottomLogo {
   margin-top: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,11 +453,6 @@ html {
 }
 .bottomLogo__img {
   width: 5rem;
-}
-@media (max-width: 460px) {
-  .bottomLogo__img {
-    display: none;
-  }
 }
 @media (max-width: 860px) {
   .bottomLogo {
@@ -471,6 +467,9 @@ html {
 
 .footer {
   margin-top: 2rem;
+}
+.footer .navbar__menu {
+  justify-content: center;
 }
 
 .social {
