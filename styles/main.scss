@@ -203,3 +203,60 @@ html {
     }
   }
 }
+
+// ********** Shop **********
+.shop {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--top {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #6cb0f0;
+    }
+    &--bottom {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #828282;
+    }
+  }
+  &__slide {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    &--item {
+      position: relative;
+      margin: 0 12rem;
+      .text-top {
+        position: absolute;
+        top: 28rem;
+        right: -8rem;
+        color: #828282;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .text-bottom {
+        top: 30rem;
+        width: 200px;
+        right: -15rem;
+        position: absolute;
+        color: #000000;
+        font-size: 3rem;
+        font-weight: 600;
+      }
+      .price {
+        top: 40rem;
+        right: -5rem;
+        position: absolute;
+        color: #d067ac;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

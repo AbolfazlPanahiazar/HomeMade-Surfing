@@ -230,4 +230,60 @@ html {
   color: #cacacb;
 }
 
+.shop {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop__heading--top {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #6cb0f0;
+}
+.shop__heading--bottom {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #828282;
+}
+.shop__slide {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+.shop__slide--item {
+  position: relative;
+  margin: 0 12rem;
+}
+.shop__slide--item .text-top {
+  position: absolute;
+  top: 28rem;
+  right: -8rem;
+  color: #828282;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.shop__slide--item .text-bottom {
+  top: 30rem;
+  width: 200px;
+  right: -15rem;
+  position: absolute;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.shop__slide--item .price {
+  top: 40rem;
+  right: -5rem;
+  position: absolute;
+  color: #d067ac;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */
