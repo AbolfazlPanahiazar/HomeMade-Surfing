@@ -364,4 +364,41 @@ html {
   }
 }
 
+.form {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.form__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem 0;
+  color: #828282;
+}
+.form__input {
+  background-color: #d4d4d4;
+  padding-left: 1rem;
+  width: 90%;
+  max-width: 500px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.form__input--input {
+  border: none;
+  background-color: transparent;
+}
+.form__input--button {
+  width: 10%;
+  background-color: #2688e5;
+  color: #ffffff;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */

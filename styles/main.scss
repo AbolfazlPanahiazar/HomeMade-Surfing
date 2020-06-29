@@ -332,3 +332,41 @@ html {
     }
   }
 }
+
+// ********** form **********
+.form {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem 0;
+    color: #828282;
+  }
+  &__input {
+    background-color: #d4d4d4;
+    padding-left: 1rem;
+    width: 90%;
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    &--input {
+      border: none;
+      background-color: transparent;
+    }
+    &--button {
+      width: 10%;
+      background-color: #2688e5;
+      color: #ffffff;
+      border: none;
+    }
+  }
+}
